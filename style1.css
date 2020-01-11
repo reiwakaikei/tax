@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+/* common */
+.padding {
+  padding-bottom: 2rem;
+}
+.container {
+  margin: 0 auto;
+}
+
+/* Navigation */
+.navbar {
+  padding: .8rem;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important
+}
+
+video {
+  width: 100%;
+}
+
+/* サービス */
+.circle {
+  position: relative;
+  display:inline-block;
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  background: #228acb;
+  margin-right: 25px;
+}
+
+.circle p {
+  position: absolute;
+  display: inline-block;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 220px;
+  text-align: center;
+  color: #f8f9fa;
+  font-size: 18px;
+}
+
+.arrow {
+  position: relative;
+}
+
+.arrow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30px;
+  right: 49.5%;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #228acb;
+  border-right: 2px solid #228acb;
+  transform: translateX(-50%) rotate(135deg);
+}
+
+h2 a img {
+  position: relative;
+  bottom: 7px;
+}
+
+h3 {
+  color: #09367e;
+}
+
+h5 {
+  color: #228acb;
+}
+
+/* 提出ボタン */
+.btn {
+  padding: 6px 10%;
+  background-color: white;
+  color: #228acb;
+  border: 2px solid #228acb;
+}
+
+.btn:hover {
+  background-color: #228acb;
+  color: white;
+}
+
+/* 区切りバー */
+.container hr {
+  border-top: 2px solid #b4b4b4;
+  width: 100%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+/* icon */
+.fa-handshake {
+  color: #e54d26;
+}
+.fa-american-sign-language-interpreting {
+  color: #04000a;
+}
+.fa-cut {
+  color: #2163af;
+}
+.fa-phone {
+  color: green;
+}
+.fa-car {
+  color: #ff00ff;
+}
+.fa-envelope {
+  color: #87CEFA;
+}
+.fa-map-marker-alt {
+  color: red;
+}
+.fa-handshake, .fa-american-sign-language-interpreting, .fa-cut, .fa-phone, .fa-car{
+  font-size: 4em;
+  margin: 1rem;
+}
+
+#service, #point, #about, #faq, #contact {
+  margin-top: -70px;
+  padding-top: 70px;
+}
+
+#service1, #service2, #service3, #service4 {
+  margin-top: -100px;
+  padding-top: 100px;
+}
+
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.li {
+  text-align: left;
+  list-style: none;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.card-text {
+  text-align: left;
+}
+
+.font {
+  font-family: 'selif';
+}
+
+/* footer */
+footer {
+  background-color: #09367e;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+footer a {
+  color: #d5d5d5;
+}
+
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+.copyright {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 0;
+}
+.yoko {
+  display: inline;
+  text-align: center;
+}
+
+/* 令和会計5つのポイント */
+.services-boxes {
+  border: 1px solid #e8e8e8;
+}
+
+/* faq */  
+#faq-list {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  list-style: none;
+  color: #6c757d;
+}
+
+.faq-list-item {
+  margin: 20px;
+  border: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-list-item h3 {
+  font-size: 1.25rem;
+  margin: 10px;
+}
+
+.faq-list-item p {
+  margin: 0 10px;
+}
+
+.faq-list-item span {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.answer {
+  font-size: 1rem;
+  padding: 10px 0;
+  display: none;
+  border-top: 1px solid #ccc;
+}
+
+/*---Media Queries --*/
+@media (max-width: 1024px) {
+  h5 {
+    font-size: 18px;
+  }
+  .font {
+    text-align: left;
+  }
+  .sp_br {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .container {
+    margin: 0;
+  } */
+  #faq-list {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  
+}
+
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/japan-4524260_1920.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
